@@ -5,11 +5,13 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-
+    directory: '/Users/kris/Documents/multibasebox/projects/BI033-respimat-global',
   },
+
   mutations: {
 
   },
+
   actions: {
 
   },
