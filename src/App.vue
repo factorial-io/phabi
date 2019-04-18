@@ -11,16 +11,16 @@
       <Sidebar />
     </v-navigation-drawer>
 
-    <v-toolbar color="amber" app absolute clipped-left>
+    <v-toolbar color="deep-purple lighten-2" app absolute clipped-left>
       <v-toolbar-side-icon @click="drawer = !drawer"></v-toolbar-side-icon>
-      <span class="title ml-3 mr-5">PHAB&nbsp;<span class="font-weight-light">i</span></span>
+      <span class="title ml-3 mr-5">PHAB<span class="font-weight-strong">i</span></span>
       <v-spacer></v-spacer>
     </v-toolbar>
 
     <v-content>
       <v-container fluid fill-height class="grey lighten-4">
         <v-layout>
-          <Project />
+          <router-view />
         </v-layout>
       </v-container>
     </v-content>
@@ -29,12 +29,10 @@
 
 <script>
 import Sidebar from './views/Sidebar.vue';
-import Project from './views/Project.vue';
 
 export default {
   components: {
     Sidebar,
-    Project,
   },
 
   data: () => ({
